@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>
+    <script>
+        function play() {
+            var audio = new Audio("assets/explosion.mp3");
+            audio.play();
+        }
+    </script>
+    <p class="bordered">
         Hello world!
         <br>
         Please check out this website: <a href="https://reicha2.github.io/Music_p1/index.html">Music_p1</a>
     </p>
+    <form class="bordered">
+        <input type="button" onclick="play()" value="BOOM">
+    </form>
 </body>
 </html>
